@@ -1,0 +1,28 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+.env.*
+
+node_modules/
+frontend/node_modules/
+frontend/build/
+
+.vscode/
+
+.pytest_cache/
+
+.DS_Store
+Thumbs.db
+
+*.h5
+*.keras
+*.pth
+*.pt
+
+*.log
+# Datasets
+*.zip
+# PlantVillage dataset
+crop-disease-app/model/data/PlantVillageDataset/

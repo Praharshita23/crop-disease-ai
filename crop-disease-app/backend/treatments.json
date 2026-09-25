@@ -1,0 +1,630 @@
+{
+    "Pepper__bell___Bacterial_spot": {
+        "disease_type": "Bacterial",
+
+        "crop": {
+            "english": "Bell Pepper",
+            "hindi": "शिमला मिर्च"
+        },
+
+        "disease_name": {
+            "english": "Bacterial Spot",
+            "hindi": "बैक्टीरियल स्पॉट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Small dark spots may appear on leaves and fruit. Severe infection can cause leaf damage and premature leaf drop.",
+            "hindi": "पत्तियों और फलों पर छोटे गहरे धब्बे दिखाई दे सकते हैं। अधिक संक्रमण से पत्तियों को नुकसान और समय से पहले पत्तियां गिर सकती हैं।"
+        },
+
+        "cause": {
+            "english": "Caused by bacterial pathogens that can spread through infected plant material and water splashes.",
+            "hindi": "यह बैक्टीरियल रोगजनकों के कारण होता है जो संक्रमित पौध सामग्री और पानी की छींटों से फैल सकते हैं।"
+        },
+
+        "spread": {
+            "english": "The disease can spread through rain splash, irrigation water, infected plant material and handling wet plants.",
+            "hindi": "यह रोग बारिश की छींटों, सिंचाई के पानी, संक्रमित पौध सामग्री और गीले पौधों को छूने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove severely infected leaves and plant debris. Avoid working with plants when foliage is wet. For severe cases, use a locally approved treatment according to the product label and agricultural guidance.",
+            "hindi": "बहुत अधिक संक्रमित पत्तियों और पौधों के अवशेषों को हटा दें। जब पत्तियां गीली हों तब पौधों को न छुएं। अधिक संक्रमण की स्थिति में स्थानीय रूप से अनुमोदित उपचार का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Use healthy planting material, maintain good spacing and air circulation, avoid overhead watering, and remove infected plant debris.",
+            "hindi": "स्वस्थ पौध सामग्री का उपयोग करें, पौधों के बीच उचित दूरी रखें, हवा का अच्छा संचार बनाए रखें, ऊपर से पानी देने से बचें और संक्रमित अवशेषों को हटा दें।"
+        }
+    },
+
+
+    "Pepper__bell___healthy": {
+        "disease_type": "Healthy",
+
+        "crop": {
+            "english": "Bell Pepper",
+            "hindi": "शिमला मिर्च"
+        },
+
+        "disease_name": {
+            "english": "Healthy",
+            "hindi": "स्वस्थ"
+        },
+
+        "severity": "None",
+
+        "symptoms": {
+            "english": "No visible disease symptoms are detected.",
+            "hindi": "रोग के कोई स्पष्ट लक्षण दिखाई नहीं दे रहे हैं।"
+        },
+
+        "cause": {
+            "english": "The plant appears healthy based on the AI image analysis.",
+            "hindi": "AI द्वारा तस्वीर के विश्लेषण के आधार पर पौधा स्वस्थ दिखाई देता है।"
+        },
+
+        "spread": {
+            "english": "No disease spread is indicated.",
+            "hindi": "रोग फैलने का कोई संकेत नहीं है।"
+        },
+
+        "treatment": {
+            "english": "No disease treatment is required. Continue normal crop care and monitoring.",
+            "hindi": "किसी रोग उपचार की आवश्यकता नहीं है। सामान्य फसल देखभाल और निगरानी जारी रखें।"
+        },
+
+        "prevention": {
+            "english": "Maintain proper irrigation, nutrition, sanitation and regularly inspect leaves for early signs of disease.",
+            "hindi": "उचित सिंचाई, पोषण और स्वच्छता बनाए रखें तथा रोग के शुरुआती लक्षणों के लिए पत्तियों की नियमित जांच करें।"
+        }
+    },
+
+
+    "Potato___Early_blight": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Potato",
+            "hindi": "आलू"
+        },
+
+        "disease_name": {
+            "english": "Early Blight",
+            "hindi": "अर्ली ब्लाइट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Dark circular or irregular spots may appear on older leaves. Lesions can enlarge and develop concentric ring patterns.",
+            "hindi": "पुरानी पत्तियों पर गहरे गोल या अनियमित धब्बे दिखाई दे सकते हैं। धब्बे बढ़ सकते हैं और उनमें गोलाकार छल्ले दिखाई दे सकते हैं।"
+        },
+
+        "cause": {
+            "english": "Caused by fungal pathogens that can survive in infected plant debris and become active under favorable environmental conditions.",
+            "hindi": "यह फफूंद रोगजनकों के कारण होता है जो संक्रमित पौध अवशेषों में जीवित रह सकते हैं और अनुकूल पर्यावरणीय परिस्थितियों में सक्रिय हो सकते हैं।"
+        },
+
+        "spread": {
+            "english": "Can spread through infected plant debris, water splash and prolonged leaf wetness.",
+            "hindi": "यह संक्रमित पौध अवशेषों, पानी की छींटों और पत्तियों के लंबे समय तक गीले रहने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove badly affected leaves and plant debris. Improve airflow around plants. For significant disease pressure, use a locally approved fungicide according to its label and agricultural guidance.",
+            "hindi": "बहुत अधिक प्रभावित पत्तियों और पौधों के अवशेषों को हटा दें। पौधों के आसपास हवा का संचार बेहतर करें। अधिक संक्रमण की स्थिति में स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उसके लेबल और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Avoid prolonged leaf wetness, provide adequate spacing, rotate crops where practical, and remove infected plant material.",
+            "hindi": "पत्तियों को लंबे समय तक गीला रहने से बचाएं, पर्याप्त दूरी रखें, जहां संभव हो फसल चक्र अपनाएं और संक्रमित पौध सामग्री को हटा दें।"
+        }
+    },
+
+
+    "Potato___Late_blight": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Potato",
+            "hindi": "आलू"
+        },
+
+        "disease_name": {
+            "english": "Late Blight",
+            "hindi": "लेट ब्लाइट"
+        },
+
+        "severity": "High",
+
+        "symptoms": {
+            "english": "Water-soaked or dark lesions may develop on leaves. Under favorable conditions, the disease can progress rapidly and damage stems and tubers.",
+            "hindi": "पत्तियों पर पानी जैसे या गहरे धब्बे दिखाई दे सकते हैं। अनुकूल परिस्थितियों में रोग तेजी से फैल सकता है और तनों तथा कंदों को नुकसान पहुंचा सकता है।"
+        },
+
+        "cause": {
+            "english": "Caused by a pathogen that develops rapidly under cool, wet and humid conditions.",
+            "hindi": "यह रोगजनक के कारण होता है जो ठंडी, गीली और अधिक नमी वाली परिस्थितियों में तेजी से विकसित हो सकता है।"
+        },
+
+        "spread": {
+            "english": "Can spread rapidly through infected plant material, rain splash, irrigation water and prolonged wet conditions.",
+            "hindi": "यह संक्रमित पौध सामग्री, बारिश की छींटों, सिंचाई के पानी और लंबे समय तक गीली परिस्थितियों से तेजी से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove and safely dispose of severely infected plant material. Avoid prolonged leaf wetness. For disease management, use a locally approved fungicide according to the product label and agricultural guidance.",
+            "hindi": "बहुत अधिक संक्रमित पौध सामग्री को हटा कर सुरक्षित रूप से नष्ट करें। पत्तियों को लंबे समय तक गीला रहने से बचाएं। रोग नियंत्रण के लिए स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Improve field ventilation, avoid unnecessary overhead irrigation, monitor crops frequently during humid or rainy periods, and remove infected debris.",
+            "hindi": "खेत में हवा का संचार बेहतर करें, अनावश्यक रूप से ऊपर से सिंचाई न करें, अधिक नमी या बारिश के समय फसल की नियमित निगरानी करें और संक्रमित अवशेषों को हटा दें।"
+        }
+    },
+
+
+    "Potato___healthy": {
+        "disease_type": "Healthy",
+
+        "crop": {
+            "english": "Potato",
+            "hindi": "आलू"
+        },
+
+        "disease_name": {
+            "english": "Healthy",
+            "hindi": "स्वस्थ"
+        },
+
+        "severity": "None",
+
+        "symptoms": {
+            "english": "No visible disease symptoms are detected.",
+            "hindi": "रोग के कोई स्पष्ट लक्षण दिखाई नहीं दे रहे हैं।"
+        },
+
+        "cause": {
+            "english": "The plant appears healthy based on the AI image analysis.",
+            "hindi": "AI द्वारा तस्वीर के विश्लेषण के आधार पर पौधा स्वस्थ दिखाई देता है।"
+        },
+
+        "spread": {
+            "english": "No disease spread is indicated.",
+            "hindi": "रोग फैलने का कोई संकेत नहीं है।"
+        },
+
+        "treatment": {
+            "english": "No disease treatment is required. Continue regular crop monitoring and maintenance.",
+            "hindi": "किसी रोग उपचार की आवश्यकता नहीं है। नियमित फसल निगरानी और देखभाल जारी रखें।"
+        },
+
+        "prevention": {
+            "english": "Use healthy seed material, maintain proper irrigation and nutrition, and regularly inspect plants for disease symptoms.",
+            "hindi": "स्वस्थ बीज सामग्री का उपयोग करें, उचित सिंचाई और पोषण बनाए रखें तथा रोग के लक्षणों के लिए पौधों की नियमित जांच करें।"
+        }
+    },
+
+
+    "Tomato_Bacterial_spot": {
+        "disease_type": "Bacterial",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Bacterial Spot",
+            "hindi": "बैक्टीरियल स्पॉट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Small dark spots may develop on leaves and fruit. Severe infections can cause leaf damage and reduced plant vigor.",
+            "hindi": "पत्तियों और फलों पर छोटे गहरे धब्बे दिखाई दे सकते हैं। अधिक संक्रमण से पत्तियों को नुकसान और पौधे की वृद्धि में कमी हो सकती है।"
+        },
+
+        "cause": {
+            "english": "Caused by bacterial pathogens that can survive on infected plant material and spread under wet conditions.",
+            "hindi": "यह बैक्टीरियल रोगजनकों के कारण होता है जो संक्रमित पौध सामग्री पर रह सकते हैं और गीली परिस्थितियों में फैल सकते हैं।"
+        },
+
+        "spread": {
+            "english": "Can spread through water splash, infected plant material, tools and handling wet foliage.",
+            "hindi": "यह पानी की छींटों, संक्रमित पौध सामग्री, औजारों और गीली पत्तियों को छूने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove severely infected leaves and plant debris. Avoid handling wet foliage. For significant infection, use a locally approved treatment according to the product label and agricultural guidance.",
+            "hindi": "बहुत अधिक संक्रमित पत्तियों और पौधों के अवशेषों को हटा दें। गीली पत्तियों को छूने से बचें। अधिक संक्रमण की स्थिति में स्थानीय रूप से अनुमोदित उपचार का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Use clean planting material, avoid overhead irrigation, maintain good plant spacing and remove infected debris promptly.",
+            "hindi": "स्वच्छ पौध सामग्री का उपयोग करें, ऊपर से सिंचाई से बचें, पौधों के बीच उचित दूरी रखें और संक्रमित अवशेषों को तुरंत हटा दें।"
+        }
+    },
+
+
+    "Tomato_Early_blight": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Early Blight",
+            "hindi": "अर्ली ब्लाइट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Dark spots with concentric rings may develop on older leaves. Leaves can yellow and fall as infection progresses.",
+            "hindi": "पुरानी पत्तियों पर गोलाकार छल्लों वाले गहरे धब्बे दिखाई दे सकते हैं। संक्रमण बढ़ने पर पत्तियां पीली होकर गिर सकती हैं।"
+        },
+
+        "cause": {
+            "english": "Caused by fungal pathogens that can survive in infected plant debris.",
+            "hindi": "यह फफूंद रोगजनकों के कारण होता है जो संक्रमित पौध अवशेषों में जीवित रह सकते हैं।"
+        },
+
+        "spread": {
+            "english": "Can spread through infected debris, water splash and prolonged leaf wetness.",
+            "hindi": "यह संक्रमित अवशेषों, पानी की छींटों और पत्तियों के लंबे समय तक गीले रहने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove severely affected leaves and plant debris. Improve air circulation and avoid prolonged leaf wetness. Use a locally approved fungicide when necessary according to the product label and agricultural guidance.",
+            "hindi": "बहुत अधिक प्रभावित पत्तियों और पौधों के अवशेषों को हटा दें। हवा का संचार बेहतर करें और पत्तियों को लंबे समय तक गीला रहने से बचाएं। आवश्यकता होने पर स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Maintain adequate spacing, avoid overhead watering, remove lower infected leaves, and practice crop rotation where practical.",
+            "hindi": "पर्याप्त दूरी बनाए रखें, ऊपर से पानी देने से बचें, संक्रमित निचली पत्तियों को हटाएं और जहां संभव हो फसल चक्र अपनाएं।"
+        }
+    },
+
+
+    "Tomato_Late_blight": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Late Blight",
+            "hindi": "लेट ब्लाइट"
+        },
+
+        "severity": "High",
+
+        "symptoms": {
+            "english": "Dark or water-soaked lesions may appear on leaves and stems. The disease can progress rapidly during favorable wet conditions.",
+            "hindi": "पत्तियों और तनों पर गहरे या पानी जैसे धब्बे दिखाई दे सकते हैं। अनुकूल गीली परिस्थितियों में रोग तेजी से फैल सकता है।"
+        },
+
+        "cause": {
+            "english": "Caused by a pathogen favored by cool, wet and humid conditions.",
+            "hindi": "यह रोगजनक के कारण होता है जो ठंडी, गीली और अधिक नमी वाली परिस्थितियों में तेजी से बढ़ सकता है।"
+        },
+
+        "spread": {
+            "english": "Can spread through infected plant material, rain splash, irrigation water and prolonged leaf wetness.",
+            "hindi": "यह संक्रमित पौध सामग्री, बारिश की छींटों, सिंचाई के पानी और पत्तियों के लंबे समय तक गीले रहने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove severely infected plant material and dispose of it safely. Reduce prolonged leaf wetness. For disease management, use a locally approved fungicide according to the product label and agricultural guidance.",
+            "hindi": "बहुत अधिक संक्रमित पौध सामग्री को हटा कर सुरक्षित रूप से नष्ट करें। पत्तियों को लंबे समय तक गीला रहने से बचाएं। रोग नियंत्रण के लिए स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Improve air circulation, avoid unnecessary overhead irrigation, monitor plants closely during cool and wet weather, and remove infected debris.",
+            "hindi": "हवा का संचार बेहतर करें, अनावश्यक रूप से ऊपर से सिंचाई न करें, ठंडे और नम मौसम में पौधों की लगातार निगरानी करें और संक्रमित अवशेषों को हटा दें।"
+        }
+    },
+
+
+    "Tomato_Leaf_Mold": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Leaf Mold",
+            "hindi": "लीफ मोल्ड"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Yellowish patches may appear on the upper leaf surface while olive or grayish fungal growth may develop underneath.",
+            "hindi": "पत्तियों की ऊपरी सतह पर पीले धब्बे दिखाई दे सकते हैं और नीचे जैतूनी या धूसर रंग की फफूंद वृद्धि हो सकती है।"
+        },
+
+        "cause": {
+            "english": "Fungal growth is favored by high humidity and poor air circulation.",
+            "hindi": "अधिक नमी और हवा के कम संचार से फफूंद की वृद्धि को बढ़ावा मिल सकता है।"
+        },
+
+        "spread": {
+            "english": "Can spread through spores under humid conditions and through infected plant material.",
+            "hindi": "यह अधिक नमी वाली परिस्थितियों में बीजाणुओं और संक्रमित पौध सामग्री के माध्यम से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove severely affected leaves and improve ventilation around plants. Reduce excess humidity and avoid prolonged leaf wetness. Use a locally approved fungicide according to the product label when necessary.",
+            "hindi": "बहुत अधिक प्रभावित पत्तियों को हटाएं और पौधों के आसपास हवा का संचार बेहतर करें। अधिक नमी कम करें और पत्तियों को लंबे समय तक गीला रहने से बचाएं। आवश्यकता होने पर स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उत्पाद के निर्देश के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Maintain good spacing, improve greenhouse or field ventilation, avoid excessive humidity and water plants at the soil level when practical.",
+            "hindi": "पौधों के बीच उचित दूरी रखें, ग्रीनहाउस या खेत में हवा का संचार बेहतर करें, अत्यधिक नमी से बचें और जहां संभव हो मिट्टी के स्तर पर पानी दें।"
+        }
+    },
+
+
+    "Tomato_Septoria_leaf_spot": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Septoria Leaf Spot",
+            "hindi": "सेप्टोरिया लीफ स्पॉट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Small circular leaf spots may develop with darker borders. Severe infection can cause yellowing and leaf drop.",
+            "hindi": "पत्तियों पर गहरे किनारों वाले छोटे गोल धब्बे दिखाई दे सकते हैं। अधिक संक्रमण से पत्तियां पीली होकर गिर सकती हैं।"
+        },
+
+        "cause": {
+            "english": "Caused by a fungal pathogen that can survive in infected plant debris.",
+            "hindi": "यह फफूंद रोगजनक के कारण होता है जो संक्रमित पौध अवशेषों में जीवित रह सकता है।"
+        },
+
+        "spread": {
+            "english": "Can spread through water splash, infected debris and prolonged leaf wetness.",
+            "hindi": "यह पानी की छींटों, संक्रमित अवशेषों और पत्तियों के लंबे समय तक गीले रहने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove affected leaves and plant debris. Avoid splashing water onto foliage. For significant infection, use a locally approved fungicide according to the product label and agricultural guidance.",
+            "hindi": "प्रभावित पत्तियों और पौधों के अवशेषों को हटा दें। पत्तियों पर पानी के छींटे पड़ने से बचाएं। अधिक संक्रमण की स्थिति में स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Maintain good plant spacing, improve air circulation, avoid overhead watering and remove infected debris from the growing area.",
+            "hindi": "पौधों के बीच उचित दूरी रखें, हवा का अच्छा संचार बनाए रखें, ऊपर से सिंचाई से बचें और संक्रमित अवशेषों को खेती के क्षेत्र से हटा दें।"
+        }
+    },
+
+
+    "Tomato_Spider_mites_Two_spotted_spider_mite": {
+        "disease_type": "Pest",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Two-Spotted Spider Mite",
+            "hindi": "टू-स्पॉटेड स्पाइडर माइट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Fine speckling or yellowing may appear on leaves. Webbing can develop under heavy infestation.",
+            "hindi": "पत्तियों पर छोटे-छोटे पीले धब्बे या पीला पड़ना दिखाई दे सकता है। अधिक संक्रमण में जाला दिखाई दे सकता है।"
+        },
+
+        "cause": {
+            "english": "Damage is caused by spider mites feeding on plant tissues.",
+            "hindi": "पौधों के ऊतकों से रस चूसने वाले स्पाइडर माइट्स के कारण नुकसान होता है।"
+        },
+
+        "spread": {
+            "english": "Mites can spread between plants through plant contact, wind and movement of infested plant material.",
+            "hindi": "माइट्स पौधों के संपर्क, हवा और संक्रमित पौध सामग्री की आवाजाही से फैल सकते हैं।"
+        },
+
+        "treatment": {
+            "english": "Inspect the undersides of leaves and remove heavily infested plant parts. Use an appropriate locally approved mite-control product according to its label and agricultural guidance when necessary.",
+            "hindi": "पत्तियों की निचली सतह की जांच करें और बहुत अधिक प्रभावित पौध भागों को हटा दें। आवश्यकता होने पर स्थानीय रूप से अनुमोदित माइट नियंत्रण उत्पाद का उपयोग उसके लेबल और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Monitor plants regularly, avoid excessive plant stress, maintain adequate irrigation, and encourage beneficial insects where appropriate.",
+            "hindi": "पौधों की नियमित निगरानी करें, पौधों पर अत्यधिक तनाव से बचें, उचित सिंचाई बनाए रखें और जहां उचित हो लाभकारी कीटों को संरक्षण दें।"
+        }
+    },
+
+
+    "Tomato__Target_Spot": {
+        "disease_type": "Fungal",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Target Spot",
+            "hindi": "टारगेट स्पॉट"
+        },
+
+        "severity": "Moderate",
+
+        "symptoms": {
+            "english": "Circular brown lesions may develop on leaves, often with concentric patterns resembling a target.",
+            "hindi": "पत्तियों पर गोल भूरे धब्बे दिखाई दे सकते हैं जिनमें अक्सर लक्ष्य जैसे गोलाकार पैटर्न होते हैं।"
+        },
+
+        "cause": {
+            "english": "Caused by a fungal pathogen favored by warm, humid and wet conditions.",
+            "hindi": "यह फफूंद रोगजनक के कारण होता है जिसे गर्म, नम और गीली परिस्थितियां बढ़ावा दे सकती हैं।"
+        },
+
+        "spread": {
+            "english": "Can spread through infected plant material, water splash and prolonged leaf wetness.",
+            "hindi": "यह संक्रमित पौध सामग्री, पानी की छींटों और पत्तियों के लंबे समय तक गीले रहने से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "Remove severely affected leaves and plant debris. Improve airflow and avoid prolonged leaf wetness. If needed, use a locally approved fungicide according to the product label and agricultural guidance.",
+            "hindi": "बहुत अधिक प्रभावित पत्तियों और पौधों के अवशेषों को हटा दें। हवा का संचार बेहतर करें और पत्तियों को लंबे समय तक गीला रहने से बचाएं। आवश्यकता होने पर स्थानीय रूप से अनुमोदित फफूंदनाशी का उपयोग उत्पाद के निर्देश और कृषि सलाह के अनुसार करें।"
+        },
+
+        "prevention": {
+            "english": "Maintain proper plant spacing, avoid overhead watering, remove infected plant material and practice crop rotation where practical.",
+            "hindi": "पौधों के बीच उचित दूरी रखें, ऊपर से सिंचाई से बचें, संक्रमित पौध सामग्री हटाएं और जहां संभव हो फसल चक्र अपनाएं।"
+        }
+    },
+
+
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+        "disease_type": "Viral",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Tomato Yellow Leaf Curl Virus",
+            "hindi": "टमाटर येलो लीफ कर्ल वायरस"
+        },
+
+        "severity": "High",
+
+        "symptoms": {
+            "english": "Leaves may become yellow, curl upward and remain small. Plants may show stunted growth and reduced fruit production.",
+            "hindi": "पत्तियां पीली हो सकती हैं, ऊपर की ओर मुड़ सकती हैं और छोटी रह सकती हैं। पौधों की वृद्धि रुक सकती है और फल उत्पादन कम हो सकता है।"
+        },
+
+        "cause": {
+            "english": "Caused by a plant virus that is commonly transmitted by whiteflies.",
+            "hindi": "यह पौध वायरस के कारण होता है जो आमतौर पर सफेद मक्खियों द्वारा फैलाया जाता है।"
+        },
+
+        "spread": {
+            "english": "Primarily spreads through infected planting material and insect vectors such as whiteflies.",
+            "hindi": "यह मुख्य रूप से संक्रमित पौध सामग्री और सफेद मक्खी जैसे कीट वाहकों से फैलता है।"
+        },
+
+        "treatment": {
+            "english": "There is no direct cure for an infected plant. Remove severely affected plants where appropriate and manage the insect vectors that spread the virus using locally approved methods.",
+            "hindi": "संक्रमित पौधे का कोई सीधा उपचार नहीं है। आवश्यकता होने पर बहुत अधिक प्रभावित पौधों को हटा दें और वायरस फैलाने वाले कीटों का स्थानीय रूप से अनुमोदित तरीकों से नियंत्रण करें।"
+        },
+
+        "prevention": {
+            "english": "Use healthy seedlings, monitor and manage whitefly populations, remove infected plants when appropriate, and keep the growing area free of weeds and plant debris.",
+            "hindi": "स्वस्थ पौध तैयारियों का उपयोग करें, सफेद मक्खी की निगरानी और नियंत्रण करें, आवश्यकता होने पर संक्रमित पौधों को हटाएं तथा खेत को खरपतवार और पौध अवशेषों से साफ रखें।"
+        }
+    },
+
+
+    "Tomato__Tomato_mosaic_virus": {
+        "disease_type": "Viral",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Tomato Mosaic Virus",
+            "hindi": "टमाटर मोज़ेक वायरस"
+        },
+
+        "severity": "High",
+
+        "symptoms": {
+            "english": "Leaves may develop light and dark green mosaic patterns, distortion and reduced growth.",
+            "hindi": "पत्तियों पर हल्के और गहरे हरे रंग के मोज़ेक पैटर्न, विकृति और पौधे की कम वृद्धि दिखाई दे सकती है।"
+        },
+
+        "cause": {
+            "english": "Caused by a plant virus that can be mechanically transmitted between plants.",
+            "hindi": "यह पौध वायरस के कारण होता है जो पौधों के बीच यांत्रिक रूप से फैल सकता है।"
+        },
+
+        "spread": {
+            "english": "Can spread through infected plant material, contaminated tools, hands and plant sap.",
+            "hindi": "यह संक्रमित पौध सामग्री, दूषित औजारों, हाथों और पौधों के रस से फैल सकता है।"
+        },
+
+        "treatment": {
+            "english": "There is no direct cure for an infected plant. Remove severely infected plants when appropriate and follow good sanitation practices to reduce mechanical spread.",
+            "hindi": "संक्रमित पौधे का कोई सीधा उपचार नहीं है। आवश्यकता होने पर बहुत अधिक संक्रमित पौधों को हटा दें और संक्रमण के यांत्रिक प्रसार को कम करने के लिए अच्छी स्वच्छता अपनाएं।"
+        },
+
+        "prevention": {
+            "english": "Use healthy planting material, disinfect tools, wash hands after handling infected plants, control weeds and avoid spreading plant sap between plants.",
+            "hindi": "स्वस्थ पौध सामग्री का उपयोग करें, औजारों को साफ करें, संक्रमित पौधों को छूने के बाद हाथ धोएं, खरपतवार नियंत्रित करें और पौधों के रस को एक पौधे से दूसरे पौधे तक फैलने से रोकें।"
+        }
+    },
+
+
+    "Tomato_healthy": {
+        "disease_type": "Healthy",
+
+        "crop": {
+            "english": "Tomato",
+            "hindi": "टमाटर"
+        },
+
+        "disease_name": {
+            "english": "Healthy",
+            "hindi": "स्वस्थ"
+        },
+
+        "severity": "None",
+
+        "symptoms": {
+            "english": "No visible disease symptoms are detected.",
+            "hindi": "रोग के कोई स्पष्ट लक्षण दिखाई नहीं दे रहे हैं।"
+        },
+
+        "cause": {
+            "english": "The plant appears healthy based on the AI image analysis.",
+            "hindi": "AI द्वारा तस्वीर के विश्लेषण के आधार पर पौधा स्वस्थ दिखाई देता है।"
+        },
+
+        "spread": {
+            "english": "No disease spread is indicated.",
+            "hindi": "रोग फैलने का कोई संकेत नहीं है।"
+        },
+
+        "treatment": {
+            "english": "No disease treatment is required. Continue regular crop care and monitoring.",
+            "hindi": "किसी रोग उपचार की आवश्यकता नहीं है। नियमित फसल देखभाल और निगरानी जारी रखें।"
+        },
+
+        "prevention": {
+            "english": "Maintain balanced irrigation and nutrition, good sanitation and regular inspection for early disease or pest symptoms.",
+            "hindi": "संतुलित सिंचाई और पोषण, अच्छी स्वच्छता बनाए रखें तथा रोग या कीट के शुरुआती लक्षणों के लिए नियमित जांच करें।"
+        }
+    }
+}
