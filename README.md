@@ -907,5 +907,3 @@ Built using:
    ↓
 💡 Smart Recommendations
 ```
-
-**Built with ❤️ using AI for smarter crop health management.**
