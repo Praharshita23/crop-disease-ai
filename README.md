@@ -24,7 +24,6 @@ CropCare AI allows users to:
 - 🧪 View disease information and treatment suggestions
 - 📜 Maintain analysis history
 - 📄 Download analysis results as a PDF
-- 🌐 Access everything through an interactive web dashboard
 
 ---
 
