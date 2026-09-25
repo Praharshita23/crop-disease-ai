@@ -1,773 +1,911 @@
-# 🌱 CropCare AI
+# 🌿 CropCare AI
 
-### AI-Powered Crop Disease Detection, Risk Assessment & Smart Agricultural Assistance
+### AI-Powered Crop Disease Detection, Risk Assessment & Smart Advisory System
 
-CropCare AI is an AI-powered web application designed to help farmers and agricultural users identify crop diseases from leaf images and receive additional information such as disease confidence, environmental conditions, risk assessment, treatment recommendations, preventive measures, and explainable AI visualizations.
+CropCare AI is an AI-powered web application designed to help farmers and agricultural users identify crop diseases from leaf images and receive intelligent, location-aware recommendations.
 
-The system combines **Deep Learning, Computer Vision, Explainable AI, Weather Data, and a Full-Stack Web Application** into a single platform.
-
----
-
-## 🚀 Key Features
-
-- 🌿 **AI-Based Crop Disease Detection**
-  - Upload a crop leaf image.
-  - The trained deep learning model identifies the disease.
-
-- 🎯 **Prediction Confidence**
-  - Displays the model's confidence percentage for the predicted disease.
-
-- 🔥 **Explainable AI with Grad-CAM**
-  - Generates a Grad-CAM visualization.
-  - Highlights the regions of the leaf that influenced the model's prediction.
-
-- 🌦️ **Weather Integration**
-  - Accepts the crop location/city.
-  - Retrieves weather information using a weather API.
-  - Displays environmental conditions relevant to crop health.
-
-- ⚠️ **Disease Risk Assessment**
-  - Calculates a risk level using prediction information and environmental conditions.
-
-- 💊 **Treatment Recommendations**
-  - Provides disease-specific treatment information.
-
-- 🛡️ **Prevention Measures**
-  - Displays preventive steps that can help reduce disease spread.
-
-- 📊 **Disease Analysis Dashboard**
-  - Shows disease, confidence, weather, and risk level in a structured interface.
-
-- 📈 **Disease Spread Forecast**
-  - Provides an assessment related to possible disease spread based on the available environmental information.
-
-- 👨‍🌾 **Recommended Actions**
-  - Provides actionable steps based on the detected condition and risk.
-
-- 📞 **Expert Support Section**
-  - Provides guidance for seeking additional agricultural assistance.
-
-- 📜 **Prediction History**
-  - Stores previous disease analysis records.
-
-- 📄 **PDF Report**
-  - Allows users to generate/download a report containing analysis information.
-
-- 🌐 **Multilingual Support**
-  - Includes support for displaying information in Hindi.
-
-- 🎨 **Modern Responsive UI**
-  - Clean agricultural-themed interface.
-  - Interactive cards, gradients, hover effects, visual indicators, and responsive layout.
+The system combines **Deep Learning, Computer Vision, Weather Intelligence, Risk Assessment, Explainable AI, and a Web Dashboard** into a single platform.
 
 ---
 
-# 🧠 How CropCare AI Works
+## 🚀 Overview
 
-The overall system follows this workflow:
+Crop diseases can significantly affect crop productivity and farmer income. Early identification of diseases can help users take appropriate preventive and corrective actions.
 
-```text
-                    ┌─────────────────────┐
-                    │   User Uploads      │
-                    │   Crop Leaf Image   │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Image Preprocessing │
-                    │ Resize → 224 × 224  │
-                    │ MobileNetV2         │
-                    │ Preprocessing       │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   MobileNetV2       │
-                    │   Deep Learning     │
-                    │      Model          │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Disease Prediction  │
-                    │ + Confidence Score  │
-                    └──────────┬──────────┘
-                               │
-                ┌──────────────┼──────────────┐
-                │              │              │
-                ▼              ▼              ▼
-        ┌─────────────┐ ┌─────────────┐ ┌──────────────┐
-        │  Grad-CAM   │ │   Weather   │ │  Treatment   │
-        │ Explanation │ │     API     │ │ & Prevention │
-        └──────┬──────┘ └──────┬──────┘ └───────┬──────┘
-               │               │                │
-               └───────────────┼────────────────┘
-                               ▼
-                    ┌─────────────────────┐
-                    │   Risk Assessment   │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Recommended Actions │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Web Dashboard     │
-                    │ Analysis + History  │
-                    └─────────────────────┘
-🧬 Machine Learning Model
+CropCare AI allows users to:
 
-CropCare AI uses MobileNetV2 as the primary deep learning architecture for crop disease classification.
+- 📸 Upload a crop leaf image
+- 🤖 Detect the possible crop disease using a Deep Learning model
+- 📊 View prediction confidence
+- 🔥 Visualize important regions using Grad-CAM
+- 🌦️ Retrieve weather information for the crop location
+- ⚠️ Calculate disease risk level
+- 💡 Receive recommended actions
+- 🧪 View disease information and treatment suggestions
+- 📜 Maintain analysis history
+- 📄 Download analysis results as a PDF
+- 🌐 Access everything through an interactive web dashboard
 
-Model Details
-Architecture: MobileNetV2
-Framework: TensorFlow / Keras
-Input Image Size: 224 × 224 × 3
-Task: Multi-class image classification
-Transfer Learning: MobileNetV2-based architecture
-Image preprocessing: MobileNetV2 preprocess_input
-Output: Predicted disease class and confidence score
+---
+
+# ✨ Key Features
+
+## 🖼️ 1. Crop Disease Detection
+
+Users can upload an image of an affected crop leaf.
+
+The uploaded image is processed and passed to a trained **MobileNetV2-based Deep Learning model**.
+
+The system returns:
+
+- Predicted disease
+- Prediction confidence
+- Disease information
+
+---
+
+## 🤖 2. MobileNetV2 Deep Learning Model
+
+CropCare AI uses **MobileNetV2** as the primary Deep Learning architecture for image classification.
+
+### Model Details
+
+| Component | Details |
+|---|---|
+| Architecture | MobileNetV2 |
+| Framework | TensorFlow / Keras |
+| Input Size | 224 × 224 × 3 |
+| Task | Crop Disease Classification |
+| Image Processing | MobileNetV2 preprocessing |
+| Output | Predicted disease class + confidence |
 
 MobileNetV2 was selected because it provides a good balance between:
 
-Image classification performance
-Computational efficiency
-Model size
-Deployment suitability
-Faster inference
+- Image classification performance
+- Computational efficiency
+- Model size
+- Deployment suitability
 
-This makes it suitable for an application where predictions need to be generated through a web backend.
+---
 
-📚 Dataset
+# 📊 Dataset
 
-The project uses the PlantVillage Dataset for crop disease image classification.
+CropCare AI uses the **PlantVillage Dataset** for crop disease classification.
 
-The dataset contains images of healthy and diseased crop leaves belonging to multiple crop/disease classes.
+The dataset contains images of healthy and diseased crop leaves belonging to multiple crop/disease categories.
 
-The project uses the dataset through a structured:
+### Dataset Pipeline
 
+The dataset is organized into:
+
+```text
 PlantVillageDataset/
-└── train_val_test/
-    ├── train/
-    ├── val/
-    └── test/
+│
+├── train/
+├── validation/
+└── test/
+```
 
-The dataset is divided into:
+The dataset is used for:
 
-Training Set – used to train the deep learning model.
-Validation Set – used during training to monitor model performance and tune the model.
-Testing Set – used to evaluate the trained model on unseen images.
+- Model training
+- Model validation
+- Final model evaluation
+- Disease classification testing
 
-The exact division is defined by the dataset preparation used during model training.
+### Image Processing
 
-🔬 Image Processing Pipeline
+Before being passed to the model, images are:
 
-Before an image is passed to the model:
+1. Loaded
+2. Resized to **224 × 224 pixels**
+3. Converted into numerical arrays
+4. Preprocessed using MobileNetV2 preprocessing
+5. Passed to the trained model
 
-Input Leaf Image
-       ↓
-Load Image
-       ↓
-Resize to 224 × 224
-       ↓
-Convert Image → NumPy Array
-       ↓
-Add Batch Dimension
-       ↓
-MobileNetV2 preprocess_input()
-       ↓
-MobileNetV2 Model
-       ↓
-Prediction Probabilities
-       ↓
-Highest Probability Class
-       ↓
-Disease + Confidence
-🔥 Explainable AI – Grad-CAM
+---
 
-CropCare AI uses Grad-CAM (Gradient-weighted Class Activation Mapping) to make the model's prediction more understandable.
+# 🔄 System Workflow
 
-Instead of only displaying:
+~~~mermaid
+flowchart TD
+    A[🌿 Upload Crop Image] --> B[🖼️ Image Preprocessing]
+    B --> C[🤖 MobileNetV2 Model]
+    C --> D[🔍 Disease Prediction]
+    D --> E[📊 Confidence Score]
+    E --> F[🌦️ Weather Analysis]
+    F --> G[⚠️ Risk Assessment]
+    G --> H[💡 Recommended Actions]
+    H --> I[🌐 Web Dashboard]
+    I --> J[📜 Analysis History]
+~~~
 
-Disease: Bacterial Spot
-Confidence: 96%
+---
 
-the system also generates a visualization showing the areas of the leaf that contributed to the prediction.
+# 🧠 AI Pipeline
 
-Grad-CAM Workflow
-Leaf Image
-     ↓
+```text
+Crop Leaf Image
+       │
+       ▼
+Image Preprocessing
+       │
+       ▼
+224 × 224 × 3 Image
+       │
+       ▼
 MobileNetV2
-     ↓
-Predicted Disease
-     ↓
-Calculate Gradients
-     ↓
-Generate Activation Map
-     ↓
-Apply Heatmap
-     ↓
-Overlay on Original Image
-     ↓
-Grad-CAM Visualization
+       │
+       ▼
+Disease Classification
+       │
+       ├──────────────► Confidence Score
+       │
+       ▼
+Disease Information
+       │
+       ▼
+Weather Data
+       │
+       ▼
+Risk Assessment
+       │
+       ▼
+Recommended Actions
+       │
+       ▼
+Web Dashboard
+```
 
-This helps users understand where the model is focusing while making its prediction.
+---
 
-🌦️ Weather Integration
+# 🔥 Explainable AI with Grad-CAM
 
-CropCare AI integrates weather information using a weather API.
+CropCare AI incorporates **Grad-CAM (Gradient-weighted Class Activation Mapping)** to provide a visual explanation of the model's prediction.
 
-The user provides a location/city such as:
+Instead of only showing the predicted disease, Grad-CAM highlights the regions of the leaf that contributed most strongly to the prediction.
 
+### Grad-CAM Pipeline
+
+```text
+Input Leaf Image
+       │
+       ▼
+MobileNetV2
+       │
+       ▼
+Disease Prediction
+       │
+       ▼
+Gradient Analysis
+       │
+       ▼
+Activation Map
+       │
+       ▼
+Grad-CAM Heatmap
+       │
+       ▼
+Visual Explanation
+```
+
+This improves model interpretability by allowing users to understand which parts of the leaf influenced the prediction.
+
+---
+
+# 🌦️ Weather Intelligence
+
+CropCare AI also considers weather conditions associated with the crop location.
+
+The user can enter a city/location such as:
+
+```text
 Hyderabad
 Delhi
 Mumbai
 Warangal
+```
 
-The application retrieves available weather information and uses it as an additional environmental factor for the analysis.
+The system retrieves weather information through a weather API.
 
 Weather information can include parameters such as:
 
-🌡️ Temperature
-💧 Humidity
-🌧️ Weather condition
-📍 Location
+- 🌡️ Temperature
+- 💧 Humidity
+- 🌧️ Weather conditions
+- 📍 Location information
 
-The environmental information is displayed alongside the disease prediction.
+This information is incorporated into the application's risk assessment process.
 
-⚠️ Risk Assessment
+---
 
-CropCare AI provides a risk assessment based on the available disease prediction and environmental information.
+# ⚠️ Disease Risk Assessment
 
-The system categorizes the risk into levels such as:
+CropCare AI combines disease prediction with environmental information to generate a risk assessment.
 
-LOW
-MEDIUM
-HIGH
+The system considers:
 
-The purpose of the risk assessment is to provide an easy-to-understand indication of the situation and help users decide what actions should be considered.
+```text
+Disease Prediction
+        +
+Confidence
+        +
+Weather Conditions
+        ↓
+Risk Assessment
+        ↓
+Risk Level
+```
 
-💊 Treatment & Prevention
+The application can display risk levels such as:
 
-After detecting a disease, the application provides disease-specific information.
+- 🟢 LOW
+- 🟡 MEDIUM
+- 🔴 HIGH
 
-Treatment
+The risk assessment is intended as a decision-support feature and not as a replacement for professional agricultural advice.
 
-Provides suggested measures that can be considered for managing the detected disease.
+---
 
-Prevention
+# 💡 Recommended Actions
 
-Provides preventive practices such as:
+After detecting a disease, CropCare AI provides recommended actions based on the identified disease.
 
-Maintaining field hygiene
-Removing infected plant material
-Monitoring crop health
-Avoiding unnecessary moisture
-Following appropriate agricultural practices
-Regularly checking surrounding plants
+Recommendations can include:
 
-The treatment and prevention information is maintained through the project's treatment data.
+- Crop management suggestions
+- Preventive practices
+- Treatment information
+- Monitoring recommendations
+- Environmental considerations
 
-🏗️ System Architecture
+This allows the system to move beyond simple classification and provide actionable information.
+
+---
+
+# 🧪 Disease Information
+
+The application provides additional information related to the detected disease.
+
+Depending on the detected condition, users can view:
+
+- Disease name
+- Symptoms
+- Possible causes
+- Treatment information
+- Prevention measures
+- Recommended actions
+
+Disease-related information is maintained using structured treatment data.
+
+---
+
+# 📜 Analysis History
+
+CropCare AI maintains previous analysis results so that users can review earlier predictions.
+
+The history feature can contain information such as:
+
+- Uploaded image
+- Predicted disease
+- Confidence
+- Risk level
+- Location
+- Weather information
+- Analysis timestamp
+
+This allows users to track previous crop health assessments.
+
+---
+
+# 📄 PDF Report
+
+The application also supports generating a downloadable analysis report.
+
+The report can contain:
+
+```text
+Crop Disease Analysis
+        │
+        ├── Disease Prediction
+        ├── Confidence
+        ├── Risk Level
+        ├── Weather Information
+        ├── Disease Information
+        └── Recommended Actions
+```
+
+This makes it easier to save and share analysis results.
+
+---
+
+# 🏗️ System Architecture
+
+```text
                     ┌──────────────────────┐
-                    │      React.js        │
-                    │     Frontend         │
+                    │      USER            │
+                    │  Crop Leaf Image     │
                     └──────────┬───────────┘
                                │
-                               │ HTTP Requests
                                ▼
                     ┌──────────────────────┐
-                    │      FastAPI         │
-                    │       Backend        │
+                    │   React Frontend     │
+                    │   Web Dashboard      │
                     └──────────┬───────────┘
                                │
-             ┌─────────────────┼─────────────────┐
-             │                 │                 │
-             ▼                 ▼                 ▼
-      ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
-      │ ML Model    │   │ Weather API │   │ Risk Engine │
-      │ MobileNetV2 │   │             │   │             │
-      └──────┬──────┘   └─────────────┘   └─────────────┘
-             │
-             ▼
-      ┌─────────────┐
-      │ Grad-CAM    │
-      │ Explainable │
-      │ AI          │
-      └─────────────┘
-
+                               ▼
                     ┌──────────────────────┐
-                    │ Treatment / History │
-                    │      Database       │
+                    │     FastAPI          │
+                    │      Backend         │
+                    └──────────┬───────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+       ┌─────────────┐  ┌─────────────┐  ┌──────────────┐
+       │ MobileNetV2 │  │   Weather   │  │ Risk Engine  │
+       │    Model    │  │     API     │  │              │
+       └──────┬──────┘  └──────┬──────┘  └──────┬───────┘
+              │                │                │
+              └────────────────┼────────────────┘
+                               ▼
+                    ┌──────────────────────┐
+                    │   Analysis Result    │
+                    │ Disease + Risk +     │
+                    │ Weather + Advice     │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Web Dashboard     │
+                    │ Analysis + History   │
                     └──────────────────────┘
-💻 Technology Stack
-Frontend
-React.js
-JavaScript
-HTML
-CSS
-Axios
-Backend
-Python
-FastAPI
-Uvicorn
-REST APIs
-Artificial Intelligence / Machine Learning
-TensorFlow
-Keras
-MobileNetV2
-NumPy
-OpenCV
-Grad-CAM
-Dataset
-PlantVillage Dataset
-APIs
-Weather API
-Database
-SQLite / project database
-Development Tools
-Visual Studio Code
-Git
-GitHub
-Python Virtual Environment
-📁 Project Structure
+```
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Axios
+
+## Backend
+
+- Python
+- FastAPI
+- Uvicorn
+- REST APIs
+
+## Artificial Intelligence / Machine Learning
+
+- TensorFlow
+- Keras
+- MobileNetV2
+- NumPy
+- OpenCV
+- Grad-CAM
+
+## Dataset
+
+- PlantVillage Dataset
+
+## External Services
+
+- Weather API
+
+## Database / Storage
+
+- SQLite / project database
+- JSON-based treatment information
+
+## Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- Python Virtual Environment
+
+---
+
+# 📁 Project Structure
+
+```text
 crop-disease-app/
 │
 ├── backend/
+│   │
 │   ├── main.py
 │   ├── risk.py
 │   ├── weather.py
 │   ├── gradcam.py
 │   ├── database.py
 │   ├── treatments.json
-│   └── ...
+│   │
+│   └── generated/
 │
 ├── frontend/
+│   │
 │   ├── src/
 │   │   ├── App.js
 │   │   ├── App.css
 │   │   └── ...
 │   │
 │   ├── public/
-│   ├── package.json
-│   └── ...
+│   └── package.json
 │
 ├── model/
+│   │
 │   ├── train.py
 │   ├── predict.py
 │   ├── evaluate.py
-│   ├── crop_disease_model.keras
-│   ├── class_names.json
 │   ├── confusion_matrix.png
+│   ├── class_names.json
+│   ├── crop_disease_model.keras
+│   │
 │   └── data/
 │       └── PlantVillageDataset/
 │
 ├── .env
 ├── .gitignore
 └── README.md
-🔌 Backend API
+```
 
-The backend is implemented using FastAPI.
+---
 
-The frontend communicates with the backend through REST API endpoints.
+# 🔌 Backend API
 
-The backend handles:
+The backend is implemented using **FastAPI**.
 
-Image upload
-Disease prediction
-Confidence calculation
-Risk assessment
-Weather retrieval
-Grad-CAM generation
-Treatment information
-Analysis history
-Report generation
-Example API Flow
-React Frontend
-      ↓
-Upload Image
-      ↓
-FastAPI Endpoint
-      ↓
-Save Uploaded Image
-      ↓
-predict_disease()
-      ↓
-MobileNetV2
-      ↓
-Prediction
-      ↓
-Risk Calculation
-      ↓
-Weather Information
-      ↓
-Grad-CAM
-      ↓
-Response JSON
-      ↓
-React Dashboard
-🧪 Model Prediction
+The API handles:
 
-The prediction function performs the following steps:
+- Image upload
+- Disease prediction
+- Risk assessment
+- Weather retrieval
+- Grad-CAM generation
+- Analysis history
+- Result processing
 
-image = load_img(
-    image_path,
-    target_size=(224, 224)
-)
+### Backend Flow
 
-image_array = img_to_array(image)
+```text
+Frontend
+   │
+   │ HTTP Request
+   ▼
+FastAPI
+   │
+   ├── Image Processing
+   │
+   ├── ML Prediction
+   │
+   ├── Grad-CAM
+   │
+   ├── Weather API
+   │
+   ├── Risk Calculation
+   │
+   └── Database / History
+   │
+   ▼
+JSON Response
+   │
+   ▼
+Frontend Dashboard
+```
 
-image_array = np.expand_dims(
-    image_array,
-    axis=0
-)
+---
 
-image_array = preprocess_input(
-    image_array
-)
+# 🌐 Frontend
 
-predictions = model.predict(
-    image_array,
-    verbose=0
-)
+The frontend is built using **React.js**.
 
-predicted_index = int(
-    np.argmax(predictions[0])
-)
+The dashboard provides a user-friendly interface for:
 
-The predicted class is obtained from:
+- Image upload
+- Location input
+- Disease detection
+- Prediction results
+- Confidence visualization
+- Weather information
+- Risk level
+- Grad-CAM visualization
+- Recommended actions
+- Disease information
+- Analysis history
+- PDF report generation
 
-class_names.json
+---
 
-The final response contains:
+# 🔐 Environment Variables
 
-{
-    "disease": "Predicted Disease",
-    "confidence": 95.42
-}
-📊 Model Evaluation
-
-The project includes evaluation utilities for analysing model performance.
-
-Evaluation can include:
-
-Accuracy
-Classification results
-Confusion Matrix
-Test-set predictions
-
-A confusion matrix is generated to visualize how the model performs across different disease classes.
-
-⚙️ Installation
-1. Clone the Repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd crop-disease-app
-🐍 Backend Setup
-
-Create a Python virtual environment:
-
-python -m venv venv
-
-Activate it on Windows:
-
-venv\Scripts\activate
-
-Install the required dependencies:
-
-pip install -r requirements.txt
-🔑 Environment Variables
-
-Create a .env file in the project according to the backend configuration.
+Create a `.env` file for API keys and environment-specific configuration.
 
 Example:
 
-WEATHER_API_KEY=your_api_key_here
+```env
+OPENWEATHER_API_KEY=your_api_key_here
+```
 
-Do not commit API keys or other sensitive credentials to GitHub.
+Do not commit real API keys or other secrets to GitHub.
 
-🚀 Run the Backend
+---
+
+# ⚙️ Installation & Setup
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/Praharshita23/crop-disease-ai.git
+```
+
+```bash
+cd crop-disease-ai
+```
+
+---
+
+# 🐍 Backend Setup
+
+Navigate to the project directory:
+
+```bash
+cd crop-disease-app
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment on Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Run the FastAPI Backend
 
 From the project directory:
 
+```bash
 uvicorn backend.main:app --reload
+```
 
-The FastAPI server will start locally.
+The backend will be available at:
 
-Typical development address:
-
+```text
 http://127.0.0.1:8000
+```
 
-FastAPI documentation can be accessed through:
+FastAPI documentation:
 
-/docs
-⚛️ Run the Frontend
+```text
+http://127.0.0.1:8000/docs
+```
 
-Open another terminal:
+---
 
-cd frontend
+# ⚛️ Frontend Setup
+
+Open another terminal and navigate to the frontend:
+
+```bash
+cd crop-disease-app/frontend
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
-Start the React application:
+Start the React development server:
 
+```bash
 npm start
+```
 
-The frontend will run on the local React development server.
+The frontend will normally run at:
 
-🧠 Running the Model Directly
+```text
+http://localhost:3000
+```
 
-The prediction module can also be tested independently.
+---
 
-From the project environment:
+# 🧪 Model Prediction
 
-python model/predict.py
+The prediction pipeline performs the following steps:
 
-The model loads:
+```text
+1. Load image
+       ↓
+2. Resize image to 224 × 224
+       ↓
+3. Convert image to array
+       ↓
+4. Add batch dimension
+       ↓
+5. Apply MobileNetV2 preprocessing
+       ↓
+6. Pass image to trained model
+       ↓
+7. Find highest probability class
+       ↓
+8. Calculate confidence
+       ↓
+9. Map class index to disease name
+       ↓
+10. Return prediction
+```
 
-crop_disease_model.keras
+---
 
-and:
+# 📈 Model Evaluation
 
-class_names.json
+The project includes model evaluation utilities for analyzing classification performance.
 
-It then processes a test leaf image and prints:
+Evaluation can include:
 
-CROP DISEASE PREDICTION
+- Accuracy
+- Loss
+- Confusion Matrix
+- Class-wise predictions
 
-Image: <image-name>
+A confusion matrix is generated to visualize the model's classification performance across different disease classes.
 
-Predicted Class: <disease>
-Confidence: <percentage>%
-🖥️ Application Workflow
-Step 1 – Upload Crop Image
+---
 
-The user uploads an image of the affected crop leaf.
+# 🔍 Explainability
 
-Step 2 – Select Crop Location
+Grad-CAM is used to provide visual explanations for predictions.
 
-The user enters the city/location where the crop is located.
+Example concept:
 
-Step 3 – Disease Detection
+```text
+Original Leaf
+      +
+Model Prediction
+      ↓
+Grad-CAM
+      ↓
+Highlighted Disease-Affected Region
+```
 
-The image is sent to the FastAPI backend.
+This helps users understand where the model is focusing when making a prediction.
 
-Step 4 – AI Prediction
+---
 
-MobileNetV2 processes the image and predicts the disease.
+# 🎯 Problem Solved
 
-Step 5 – Confidence Score
+Traditional crop disease identification can involve:
 
-The application displays the model's prediction confidence.
+- Manual inspection
+- Delayed diagnosis
+- Limited access to agricultural experts
+- Difficulty identifying early symptoms
+- Lack of location-specific environmental information
 
-Step 6 – Environmental Analysis
+CropCare AI attempts to address these challenges by combining:
 
-Weather information is retrieved for the selected location.
-
-Step 7 – Risk Assessment
-
-The application calculates a disease risk level.
-
-Step 8 – Explainable AI
-
-Grad-CAM generates a heatmap showing important regions of the leaf.
-
-Step 9 – Treatment & Prevention
-
-The application displays relevant treatment and prevention information.
-
-Step 10 – Recommended Actions
-
-The user receives practical next steps based on the analysis.
-
-Step 11 – History & Report
-
-The analysis can be stored and included in a downloadable report.
-
-🌟 User Interface
-
-The application provides a dashboard containing:
-
-┌─────────────────────────────────────────┐
-│              CropCare AI                │
-│ AI-powered crop disease detection       │
-└─────────────────────────────────────────┘
-
-          Upload Crop Image
-                  ↓
-          Enter Crop Location
-                  ↓
-            Detect Disease
-                  ↓
-
-┌──────────┬──────────┬──────────┬──────────┐
-│ Disease  │Confidence│ Weather  │   Risk   │
-└──────────┴──────────┴──────────┴──────────┘
-
-              ↓
-
-        Disease Information
-              ↓
-        Grad-CAM Analysis
-              ↓
-        Weather Analysis
-              ↓
-       Spread Forecast
-              ↓
-     Treatment & Prevention
-              ↓
-      Recommended Actions
-              ↓
-        Expert Support
-              ↓
-          History
-🔐 Security Considerations
-API keys are stored using environment variables.
-Sensitive credentials should not be committed to GitHub.
-Uploaded files should be validated before processing.
-Backend endpoints should validate incoming requests.
-File types and file sizes should be restricted in production.
-Authentication can be added for production deployments.
-🎯 Problem Addressed
-
-Crop diseases can significantly affect agricultural productivity when they are not identified early.
-
-Traditional identification often depends on:
-
-Manual observation
-Expert availability
-Physical inspection
-Delayed diagnosis
-
-CropCare AI aims to provide a faster preliminary analysis by combining:
-
+```text
 Computer Vision
        +
 Deep Learning
        +
-Explainable AI
-       +
-Weather Information
+Weather Intelligence
        +
 Risk Assessment
        +
-Treatment Guidance
+Explainable AI
+       +
+Actionable Recommendations
+```
 
-This creates a unified digital assistant for preliminary crop health analysis.
+into a single platform.
 
-💡 What Makes CropCare AI Different?
+---
 
-Instead of providing only a disease classification, CropCare AI combines multiple components:
+# 🌱 Why CropCare AI?
 
-Traditional AI Prediction
-Image
-  ↓
-Model
-  ↓
+CropCare AI is designed not just as a disease classification model, but as an integrated crop-health decision-support platform.
+
+Instead of stopping at:
+
+> "This leaf looks like Disease X."
+
+the system attempts to provide:
+
+```text
 Disease
-CropCare AI
-Image
-  ↓
-AI Disease Detection
-  ↓
+   ↓
 Confidence
-  ↓
-Grad-CAM Explanation
-  ↓
-Weather Information
-  ↓
-Risk Assessment
-  ↓
-Treatment
-  ↓
-Prevention
-  ↓
+   ↓
+Visual Explanation
+   ↓
+Weather Context
+   ↓
+Risk Level
+   ↓
 Recommended Actions
-  ↓
-History & Report
+```
 
-The goal is to move from "What disease is this?" to "What is happening, why did the model identify it, what environmental conditions are present, and what actions can be considered?"
+This creates a more complete crop-health analysis workflow.
 
-🔮 Future Scope
+---
 
-Future versions of CropCare AI can include:
+# 🚀 Future Enhancements
 
-📱 Android/iOS mobile application
-🌾 More crop and disease classes
-🌍 Regional language support
-🛰️ Satellite-based crop monitoring
-📡 IoT-based field sensors
-🌡️ Real-time soil and environmental monitoring
-🤖 AI-powered agricultural chatbot
-📍 GPS-based field monitoring
-📈 Historical disease trend analysis
-☁️ Cloud-based model deployment
-🔄 Continuous model improvement
-🧑‍🌾 Personalized farmer recommendations
-📊 Large-scale agricultural analytics
-🌐 Production deployment for real-world users
-🏆 Project Highlights
-✅ Deep Learning based disease classification
-✅ MobileNetV2 transfer-learning architecture
-✅ PlantVillage Dataset
-✅ FastAPI REST backend
-✅ React.js frontend
-✅ Weather API integration
-✅ Risk assessment engine
-✅ Grad-CAM Explainable AI
-✅ Disease treatment recommendations
-✅ Prevention guidance
-✅ Prediction history
-✅ PDF report generation
-✅ Multilingual interface
-✅ Responsive and interactive UI
-📌 Limitations
+Potential future improvements include:
 
-CropCare AI is intended as an AI-assisted preliminary crop disease analysis system.
+- 📱 Mobile application
+- 🌾 More crop and disease classes
+- 🛰️ Satellite-based crop monitoring
+- 📍 GPS-based automatic location detection
+- 📡 IoT-based soil and environmental sensors
+- 🧠 Improved Deep Learning architectures
+- 🌐 Multilingual farmer interface
+- 🗣️ Voice-based interaction
+- 📊 Long-term crop health analytics
+- 🔔 Disease-risk alerts
+- ☁️ Cloud deployment
+- 👨‍🌾 Farmer-specific recommendations
+- 📈 Historical crop health trends
 
-Model predictions may be affected by:
+---
 
-Image quality
-Lighting conditions
-Leaf orientation
-Background noise
-Disease similarity
-Diseases not represented in the training dataset
-Environmental differences between dataset images and real-world field conditions
+# 📌 Use Cases
 
-Therefore, predictions should be treated as AI-assisted guidance rather than a replacement for professional agricultural diagnosis.
+CropCare AI can be useful for:
 
-👥 Team
+- 👨‍🌾 Farmers
+- 🌱 Agricultural students
+- 🧑‍🔬 Researchers
+- 🏫 Educational institutions
+- 🌾 Agricultural extension services
+- 🤖 AI/ML research projects
+- 🏆 Hackathons and innovation competitions
 
-CropCare AI
+---
 
-Developed as an AI-based agricultural technology project.
+# 🏆 Project Highlights
 
-Areas Covered
-Artificial Intelligence
-Machine Learning
-Computer Vision
-Explainable AI
-Full-Stack Development
-REST API Development
-Data Analysis
-Agricultural Technology
-📜 License
+### 🌿 Crop Disease Detection
+Deep Learning-based crop disease classification using MobileNetV2.
 
-This project is developed for educational, research, and hackathon purposes.
+### 🔥 Explainable AI
+Grad-CAM visualization helps explain model predictions.
 
-🌱 CropCare AI
-Detect. Understand. Act.
-        🌱
-       /  \
-      / AI \
-     /______\
-        │
-        ▼
-   Crop Health
-   Intelligence
+### 🌦️ Weather-Aware Analysis
+Weather information is incorporated into the crop-risk analysis.
 
-CropCare AI — AI-powered crop disease detection and smart agricultural assistance.
+### ⚠️ Risk Assessment
+Disease and environmental information are used to provide a risk level.
+
+### 💡 Smart Recommendations
+The system provides actionable disease-management information.
+
+### 📜 Analysis History
+Previous crop-health analyses can be reviewed.
+
+### 📄 PDF Reports
+Analysis results can be saved as reports.
+
+### 🌐 Full-Stack Application
+React frontend + FastAPI backend + Deep Learning model.
+
+---
+
+# 🧑‍💻 Development Workflow
+
+```text
+Dataset
+   ↓
+Data Preprocessing
+   ↓
+Model Training
+   ↓
+Model Evaluation
+   ↓
+Model Saving
+   ↓
+FastAPI Integration
+   ↓
+Grad-CAM Integration
+   ↓
+Weather Integration
+   ↓
+Risk Assessment
+   ↓
+React Frontend
+   ↓
+Testing
+   ↓
+GitHub Deployment
+```
+
+---
+
+# 📚 Technologies Used
+
+```text
+Python
+TensorFlow
+Keras
+MobileNetV2
+NumPy
+OpenCV
+Grad-CAM
+FastAPI
+Uvicorn
+React.js
+JavaScript
+HTML
+CSS
+Axios
+PlantVillage Dataset
+Weather API
+SQLite / Database
+Git
+GitHub
+VS Code
+```
+
+---
+
+# ⚠️ Disclaimer
+
+CropCare AI is an AI-based decision-support and educational system.
+
+Predictions and recommendations should not be considered a substitute for professional agricultural diagnosis or expert advice.
+
+Users should consult qualified agricultural professionals before taking significant treatment or crop-management decisions.
+
+---
+
+# 👥 Project
+
+**CropCare AI**
+
+AI-powered crop disease detection and intelligent crop-health assessment platform.
+
+Built using:
+
+**Artificial Intelligence + Computer Vision + Deep Learning + Weather Intelligence + Explainable AI + Full-Stack Development**
+
+---
+
+## 🌿 CropCare AI
+
+### Detect. Understand. Assess. Act.
+
+```text
+🌿 Image
+   ↓
+🤖 AI Detection
+   ↓
+🔍 Explainable Prediction
+   ↓
+🌦️ Weather Context
+   ↓
+⚠️ Risk Assessment
+   ↓
+💡 Smart Recommendations
+```
+
+**Built with ❤️ using AI for smarter crop health management.**
